@@ -1,0 +1,151 @@
+:root {
+  --back-color: #0d0714;
+  --text-color: #9e78cf;
+  --done-color: #78cfb0;
+  --card-color: #1d1825;
+  --input-color-v2: #0f0917;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--back-color);
+}
+
+.card {
+  color: white;
+  background-color: var(--card-color);
+  max-width: 600px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 45px;
+  border-radius: 15px;
+  border: 2px solid var(--text-color);
+  box-shadow: 0px 0px 10px var(--text-color);
+}
+
+.card .add-task {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card .add-task input {
+  padding: 10px 15px;
+  background-color: var(--input-color-v2);
+  border: 2px solid var(--text-color);
+  width: calc(100% - 70px);
+  font-size: 20px;
+  border-radius: 15px;
+  color: var(--text-color);
+  box-shadow: 0px 0px 4px var(--text-color);
+}
+
+.card .add-task span {
+  background-color: var(--text-color);
+  font-size: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px var(--text-color);
+  transition: 0.5s;
+}
+
+.card .add-task span:hover {
+  transform: rotate(180deg);
+}
+
+.tasks-content {
+  margin: 30px 10px 0;
+}
+
+.tasks-content .tasks-to-do {
+  font-size: 19px;
+  position: relative;
+}
+
+.tasks-content .task-box {
+  padding: 20px 0;
+  display: flex;
+  margin: 20px 0;
+  background-color: var(--input-color-v2);
+  border-radius: 11px;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-color);
+  box-shadow: 0px 0px 4px var(--text-color);
+}
+
+.tasks-content .task-box .icon {
+  margin-right: 20px;
+}
+
+.tasks-content .task-box .parag {
+  margin-left: 25px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.tasks-content .task-box .check {
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+.tasks-content .task-box .delete {
+  cursor: pointer;
+}
+
+.done-tasks-content {
+  margin: 30px 10px 0;
+}
+
+.done-tasks-content .done-tasks-message {
+  font-size: 19px;
+  position: relative;
+}
+
+.done-tasks-content .finish-task-box {
+  padding: 20px 0;
+  display: flex;
+  margin: 20px 0;
+  background-color: var(--input-color-v2);
+  border-radius: 11px;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--done-color);
+  box-shadow: 0px 0px 4px var(--text-color);
+}
+
+.done-tasks-content .finish-task-box .finish-parag {
+  margin-left: 25px;
+  font-weight: 500;
+  text-decoration: line-through;
+  font-size: 17px;
+}
+
+.finish-task-box .delete {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 10px;
+  }
+
+  .card {
+    padding: 40px 15px;
+  }
+
+  .card .add-task input {
+    font-size: 18px;
+  }
+}
