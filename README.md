@@ -17,6 +17,3 @@ A simple and stylish to-do list web app built with vanilla **HTML**, **CSS**, an
 - **CSS3** 
 - **JavaScript**
 - **Notyf**
-
-## 📸 Demo
-[Live Demo](https://hanamohvmed.github.io/ToDo-List/)
